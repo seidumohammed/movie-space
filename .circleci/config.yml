@@ -60,7 +60,7 @@ jobs:
             fi
   
   
-   deploy-to-aws-cloudfront:
+  deploy-to-aws-cloudfront:
     docker:
     - image: circleci/node:16.3.1
     working_directory: ~/repo
