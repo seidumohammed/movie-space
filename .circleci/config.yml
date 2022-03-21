@@ -104,8 +104,7 @@ workflows:
     jobs:
       - build
       - deploy-to-aws-s3
-            requires:
-              - build
+            requires: build
             filters:
                 branches:
                   only:
@@ -113,8 +112,7 @@ workflows:
                     - staging
                     - master
       - deploy_to_aws_cloudfront
-            requires:
-              - deploy-to-aws-s3
+            requires: deploy-to-aws-s3
             filters:
                 branches:
                   only:
