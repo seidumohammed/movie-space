@@ -35,7 +35,7 @@ jobs:
           name: Installing AWS CLI
           working_directory: /
           command: | 
-            sudo apt-get install python-dev python-pip
+            sudo apt-get install python-dev python3-pip
             sudo pip install awscli
             aws --version
       - run:
@@ -73,7 +73,7 @@ jobs:
           name: Installing AWS CLI
           working_directory: /
           command: | 
-            sudo apt-get install python-dev python-pip
+            sudo apt-get install python-dev python3-pip
             sudo pip install awscli
             aws --version
       - run:
