@@ -90,12 +90,12 @@ jobs:
             aws configure set preview.cloudfront
             if [ "${CURRENT_BRANCH}" == "master" ]
             then
-              aws cloudfront create-invalidation --distribution-id=$PROD_DISTRIBUTION --paths=/\*
+              aws cloudfront create-invalidation --distribution-id $PROD_DISTRIBUTION --paths /\*
             elif [ "${CURRENT_BRANCH}" == "staging" ]
             then
-              aws cloudfront create-invalidation --distribution-id=$STAGING_DISTRIBUTION --paths=/\* 
+              aws cloudfront create-invalidation --distribution-id $STAGING_DISTRIBUTION --paths /\* 
             else
-              aws cloudfront create-invalidation --distribution-id=$DEV_DISTRIBUTION --paths=/\*
+              aws cloudfront create-invalidation --distribution-id $DEV_DISTRIBUTION --paths /\*
             fi
 
 
