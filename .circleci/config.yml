@@ -36,7 +36,7 @@ jobs:
           working_directory: /
           command: | 
             sudo apt-get -y -eq update
-            sudo apt-get install -y awscli
+            sudo apt-get install awscli
             sudo apt-get install -y python-pip build-essential
       - run:
           name: Build Project
@@ -74,7 +74,7 @@ jobs:
           working_directory: /
           command: | 
             sudo apt-get -y -eq update
-            sudo apt-get install -y awscli
+            sudo apt-get install awscli
             sudo apt-get install -y python-pip build-essential
       - run:
           name: Build Project
